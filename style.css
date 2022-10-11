@@ -17,26 +17,28 @@ a{
     text-decoration: none;
     color: #4a312b;
 }
-a:hover{
+a:hover, p a:hover{
     text-decoration: underline;
     transform: scale(1.1);
     transition: all 0.2s ease;
 }
 #about, #services, #projects, #contact{
-    height: 80vh;
+
     width: 90vw;
-    padding: 20px;
+    padding: 50px 20px 50px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 #nav-menu{
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 2;
     background-color: #bdc8b9;
     box-shadow: 0px 5px 15px 1px #9ba797;;
 }
@@ -46,11 +48,42 @@ a:hover{
 }
 
 
-
+input, textarea{
+    width: 70vw;
+    height: 40px;
+    margin: 3px;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 100;
+    border: none;
+}
+textarea{
+    height: 100px;
+}
+input[type="submit"]{
+    width: 200px;
+    background-color: #afb2b0;
+    font-weight: 300;
+    font-size: 1.3em;
+    box-shadow: -1px 7px 18px -3px rgba(0,0,0,0.75);
+}
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+ul{
+    list-style-type: square;
+}
+li > a, p > a{
+    text-decoration: underline;
+}
 
 .links-cont{
     display: flex;
     /* flex-direction: column; */
     justify-content: space-around;
 }
-
+footer{
+    text-align: center;
+    margin: 20px;
+}
